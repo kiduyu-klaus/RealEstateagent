@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/cardViewGeneralStyle"
+    app:contentPaddingTop="@dimen/padding_10dp"
+    app:contentPaddingLeft="@dimen/padding_10dp"
+    app:contentPaddingRight="@dimen/padding_10dp">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_layout_id"
+        style="@style/textInputLayoutStyle"
+        android:textColorHint="@color/colorAccent">
+
+        <com.kiduyu.nahashonproject.realestateagent.TextInputAutoCompleteTextView
+            android:id="@+id/text_input_autocomplete_text_view_id"
+            style="@style/textInputEditTextStyle"
+            android:inputType="text"
+            android:textColor="@color/colorPrimaryDark"
+            android:hint="Text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.cardview.widget.CardView>

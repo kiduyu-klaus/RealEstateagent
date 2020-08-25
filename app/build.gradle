@@ -20,6 +20,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
@@ -30,4 +34,58 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
+    //alertdialog
+    implementation 'com.github.Shashank02051997:FancyAlertDialog-Android:0.1'
+
+    //fancytoast
+    implementation 'com.github.Shashank02051997:FancyToast-Android:0.1.6'
+
+
+    //RETROFIT
+    implementation "com.squareup.retrofit2:retrofit:2.9.0"
+    implementation "com.squareup.retrofit2:converter-gson:2.9.0"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:2.9.0"
+    //remember me
+    implementation 'io.paperdb:paperdb:2.6'
+
+    //glide
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
+    //material styles
+    implementation 'com.google.android.material:material:1.1.0-beta01'
+
+    //navigation
+    implementation 'androidx.navigation:navigation-fragment:2.0.0'
+    implementation 'androidx.navigation:navigation-ui:2.0.0'
+    implementation 'com.android.volley:volley:1.1.0'
+    //circle imageview
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+
+    //Database (access to see it)
+    debugImplementation 'com.amitshekhar.android:debug-db:1.0.4'
+    //spinkit
+    implementation 'com.github.ybq:Android-SpinKit:1.4.0'
+
+    //ButterKnife
+    implementation 'com.jakewharton:butterknife:10.0.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.0.0'
+    //Android-storage library
+    implementation 'com.snatik:storage:2.1.0'
+
+    implementation 'com.android.volley:volley:1.1.1'
+
+    //GSON Library
+    implementation 'com.google.code.gson:gson:2.8.2'
+
+    //Room
+    implementation "android.arch.persistence.room:runtime:2.4.2"
+    annotationProcessor "android.arch.persistence.room:compiler:2.4.2"
+
+    //ViewModel and LiveData
+    implementation "android.arch.lifecycle:extensions:2.4.2"
+    annotationProcessor "android.arch.lifecycle:compiler:2.4.2"
+    //RxJava, RxAndroid
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.9'
 }
